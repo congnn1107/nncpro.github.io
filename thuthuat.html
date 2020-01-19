@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<p>Đây là trang thủ thuật</p>
+{% for post in site.posts %}
+	<li>
+		<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+	</li>
+{% endfor %}

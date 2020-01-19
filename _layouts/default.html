@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+	<title>Website của Nguyễn Ngọc Công</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/styles/default.css">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<div class="header">
+			<h2><a href="/">{{ site.site_name }}</a></h2>
+		</div>
+		<div class="navigation">
+			<ul class="menu">
+				<li><a href="/">Trang chủ</a></li>
+				<li><a href="/gioithieu.html">Giới thiệu</a></li>
+				<li><a href="/tailieu.html">Tài liệu</a></li>
+				<li><a href="/thuthuat.html">Thủ thuật</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<ul id="cacbaiviet" type="none">
+			{{ content }}
+			</ul>
+		</div>
+		<div class="footer">
+			<p>Bản quyền thuộc NNC</p>
+		</div>
+	</div>
+</body>
+</html>
