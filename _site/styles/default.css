@@ -3,6 +3,7 @@
 	padding: 0px;
 	font-family: arial;
 	transition: 0.25s;
+	overflow-x: hidden;
 }
 .header{
 	padding: 15px;
@@ -65,11 +66,26 @@
 	margin: 1% 5%;
 }
 .content #cacbaiviet{
-	margin-left:10%;
+	margin-left:0;
 }
 .content #cacbaiviet li {
 	padding: 10px;
 	border: 1px solid yellow;
+}
+#backgroundcover {
+	background-image: url(/images/index/background-img.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 100%;
+	height: 490px;
+}
+h3{
+	color: tomato;
+}
+#gioithieu{
+	margin-left: 30%; 
+	float: left;
 }
 /*Responsive*/
 @media screen and (max-width: 640px){
@@ -92,6 +108,12 @@
 	
 	.content #cacbaiviet{
 		margin-left:0px;
+	}
+	#backgroundcover{
+		height: 300px;
+	}
+	#gioithieu{
+		margin-left: 0;
 	}
 	
 }
