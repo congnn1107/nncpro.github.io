@@ -2,7 +2,12 @@
 layout: default
 ---
 {% for post in site.posts %}
-	<li>
+	<div class="bai-viet">
 		<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-	</li>
+		<p>{{ post.excerpt }}</p>
+	</div>
 {% endfor %}
+<script>
+    var a = document.getElementsByClassName("menu-item")[3];
+    a.id="selected";
+</script>

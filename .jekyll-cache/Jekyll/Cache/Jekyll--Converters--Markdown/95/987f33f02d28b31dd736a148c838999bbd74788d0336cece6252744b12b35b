@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="vi-VN">
-<head>
-	<title>Website của Nguyễn Ngọc Công</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/styles/default.css">
-</head>
-<body>
-	<div class="wrapper">
-		
-		<div class="header">
-			<h2><a href="/">NNCpro</a></h2>
-		</div>
-		<div class="navigation">
-				<a class="menu-item" href="/">Trang chủ</a>
-				<a class="menu-item" href="/gioithieu.html">Giới thiệu</a>
-				<a class="menu-item" href="https://1drv.ms/u/s!AhLkKiylsqadgrJAci5KzCJwHpCS-w?e=TJb18D" target="_blank">Tài liệu</a>
-				<a class="menu-item" href="/thuthuat.html">Thủ thuật</a>
-		</div>
-		<div class="content">
-			<h2 id="cách-hiển-thị-biểu-tượng-my-computer-trên-windows-10">Cách hiển thị biểu tượng my computer trên Windows 10</h2>
+I"G<h2 id="cách-hiển-thị-biểu-tượng-my-computer-trên-windows-10">Cách hiển thị biểu tượng my computer trên Windows 10</h2>
 <p>Khi mới cài đặt, Windows 10 sẽ mặc định không hiển thị biểu tượng My Computer (This PC), do đó làm nhiều người bất tiện khi muốn duyệt tập tin trong bộ nhớ hoặc gặp khó khăn khi muốn kiểm tra các thuộc tính của máy tính.<br />
 Hôm nay mình sẽ hướng dẫn các bạn vài bước cơ bản để hiển thị icon này lên. 
 <!--more-->
@@ -30,20 +9,4 @@ Bước 2: Chọn mục <strong>Themes</strong> rồi kéo xuống tìm mục <s
 Bước 3: Cửa sổ <em>Desktop icon setting</em> hiện lên, bây giờ bạn có thể tích chọn vào biểu tượng <strong>This PC</strong> và các biểu tượng khác nếu muốn, sau đó nhấn <strong>OK</strong> và ra ngoài màn hình làm việc để kiểm tra.<br />
 <img src="/images/2020-01-19/img03.png" alt="Cửa sổ Destop icon setting" /><br />
 Chúc các bạn thành công!</p>
-
-		</div>
-		<div class="footer">
-			<p>Bản quyền thuộc NNC<sup>&copy;</sup></p>
-		</div>
-	</div>
-	<script>
-		var a = document.getElementsByClassName("menu-item");
-		var i = 0;
-		for (i=0;i<a.length-1;i++){
-			if (a[i].id === "selected")
-			break;
-		}
-		a[i].id="selected";
-	</script>
-</body>
-</html>
+:ET

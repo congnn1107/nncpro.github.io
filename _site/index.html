@@ -13,22 +13,32 @@
 			<h2><a href="/">NNCpro</a></h2>
 		</div>
 		<div class="navigation">
-			<ul class="menu">
-				<li><a href="/">Trang chủ</a></li>
-				<li><a href="/gioithieu.html">Giới thiệu</a></li>
-				<li><a href="https://1drv.ms/u/s!AhLkKiylsqadgrJAci5KzCJwHpCS-w?e=TJb18D" target="_blank">Tài liệu</a></li>
-				<li><a href="/thuthuat.html">Thủ thuật</a></li>
-			</ul>
+				<a class="menu-item" href="/">Trang chủ</a>
+				<a class="menu-item" href="/gioithieu.html">Giới thiệu</a>
+				<a class="menu-item" href="https://1drv.ms/u/s!AhLkKiylsqadgrJAci5KzCJwHpCS-w?e=TJb18D" target="_blank">Tài liệu</a>
+				<a class="menu-item" href="/thuthuat.html">Thủ thuật</a>
 		</div>
 		<div class="content">
-			<ul id="cacbaiviet" type="none">
-			<div id="backgroundcover">
+			<div class="backgroundcover">
+    
 </div>
-			</ul>
+<script>
+    var a = document.getElementsByClassName("menu-item")[0];
+    a.id="selected";
+</script>
 		</div>
 		<div class="footer">
-			<p>Bản quyền thuộc NNC</p>
+			<p>Bản quyền thuộc NNC<sup>&copy;</sup></p>
 		</div>
 	</div>
+	<script>
+		var a = document.getElementsByClassName("menu-item");
+		var i = 0;
+		for (i=0;i<a.length-1;i++){
+			if (a[i].id === "selected")
+			break;
+		}
+		a[i].id="selected";
+	</script>
 </body>
 </html>

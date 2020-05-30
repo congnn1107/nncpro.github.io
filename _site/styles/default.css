@@ -1,119 +1,172 @@
 *{
-	margin: 0px;
-	padding: 0px;
-	font-family: arial;
-	transition: 0.25s;
-	overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 800px;
+    margin: 0 auto;
+}
+.wrapper{
+    width: 90%;
+    height: 100%;
+    margin:0.5em auto;
+
+    box-shadow: -15px 20px 30px lightgray;
 }
 .header{
-	padding: 15px;
+    width:100%;
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1em;
 }
-.header h2{
-	text-align: center;
-	font-size: 30px;
+.header a:visited , .header a{
+    color: lightskyblue;
+    text-shadow: -10px 10px 10px lightskyblue;
 }
-.header h2 a {
-	text-decoration: none;
-	color: tomato;
-}
-.navigation {
-	background-color: tomato;
-	padding: 1px;
-	display: block;
-}
-.navigation .menu {
-	margin-left: 35%;
-}
-.navigation .menu a {
-	text-decoration: none;
-	color: white;
-}
-.navigation .menu li {
-	display: inline-block;
-	padding: 10px;
-}
-.navigation .menu li:hover {
-	background-color: red;
-}
-.content{
-}
-.footer {
-	height: 100px;
-	background-color: black;
-}
-.footer p {
-	 position: relative;
-	 color: tomato;
-	 top:50%;
-	 text-align: center;
-}
-.content h2
-{
-	text-align: center;
-	color: tomato;
-	margin:10%  0px;
-}
-.content a {
-	text-decoration: none;
-	color:tomato;
-}
-.content img {
-	width: 300px;
-	height: 300px;
-	margin: 1% 30%;
-}
-.content p {
-	margin: 1% 5%;
-}
-.content #cacbaiviet{
-	margin-left:0;
-}
-.content #cacbaiviet li {
-	padding: 10px;
-	border: 1px solid yellow;
-}
-#backgroundcover {
-	background-image: url(/images/index/background-img.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	width: 100%;
-	height: 490px;
-}
-h3{
-	color: tomato;
-}
-#gioithieu{
-	margin-left: 30%; 
-	float: left;
-}
-/*Responsive*/
-@media screen and (max-width: 640px){
-	.navigation .menu li {
-		display: block;
-		width: 100%;
-		text-align: center;
-		border-top: 1px solid gray;
-		padding: 5px;
-	}
-	.navigation .menu{
-		margin-left: 0px;
-	}
+a {
+    text-decoration: none;
 
-	.content img {
-	width: 250px;
-	height: 200px;
-	margin: 1%;
-	}
-	
-	.content #cacbaiviet{
-		margin-left:0px;
-	}
-	#backgroundcover{
-		height: 300px;
-	}
-	#gioithieu{
-		margin-left: 0;
-	}
-	
+}
+
+.navigation{
+    background-color: lightskyblue;
+    padding: 0.1em 0 0.1em 0.1em;
+    
+}
+.navigation a{
+    display: inline-block;
+    padding: 1em 1em;
+    color: white;
+    margin-right: 0.2em;
+}
+#selected{
+    background-color: white;
+    color: violet;
+}
+.navigation a:hover{
+    background-color: white;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+.content{
+    width: 100%;
+    min-height: 800px;
+    margin:0.2em 0;
+}
+.content .backgroundcover{
+    min-width:inherit;
+    min-height: inherit;
+    background-image: url('/images/index/background-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+    
+   
+}
+.footer{
+    padding:2em;
+    text-align: center;
+    background-color: black;
+    color: lightskyblue;
+    clear:both;
+    text-shadow: -7px 7px 5px lightskyblue;
+}
+.gioithieu{
+    width:80%;
+    margin:0 auto;
+    padding-top: 5em;
+}
+.gioithieu img{
+    width:300px;
+    height:300px;
+    float:right;
+}
+.gioithieu .col{
+    float:left;
+    width:50%;
+}
+.gioithieu .info{
+   padding-left: 3%;
+   box-sizing: border-box;
+}
+.gioithieu h3 {
+    color: tomato;
+    margin: 0.5em 0;
+}
+.gioithieu p , li {
+    color: gray;
+    margin: 0.1em 0;
+}
+.gioithieu .info a{
+    color:lightskyblue;
+}
+ul {
+    margin-left:10%;
+}
+.bai-viet{
+    margin: 1em 1em;
+    border-bottom: 1px solid lightgray;
+}
+.bai-viet p{
+    font-weight: 200;
+    color:gray;
+    margin-left:1em;
+}
+.bai-viet h4, .bai-viet a:visited, .bai-viet a{
+    font-size: 1.5em;
+    color:tomato;
+}
+.content > h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0;
+    color: orangered;
+}
+.content >p{
+    line-height: 1.5em;
+    text-indent: 2em;
+    width:80%;
+    margin: 0 auto;
+}
+.content p img {
+    display: block;
+    margin:1em auto;
+    width:50%;
+    height: 70%;
+}
+
+@media screen and (max-width:767px){
+    .navigation a {
+        margin: 0;
+        padding: 0.5em 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid gray;
+    }
+    .content{
+        width: 100%;
+    }
+    .gioithieu .col{
+        float:none;
+        width: 100%;
+        clear:both;
+       
+    }
+    
+    .gioithieu{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .gioithieu img{
+        display: block;
+        margin:0 auto;
+    }
+    .wrapper{
+        width:100%;
+    }
 }
